@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.todo{
+    height: 100vh;
+    width: 100%;
+    background: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo__block{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+    min-height: 400px;
+
+}
+
+.todo__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.todo__form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.todo__error{
+    display: none;
+    left: 50%;
+    color: red;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: -20px;
+}
+
+.todo__field{
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid royalblue;
+}
+
+
+.todo__add{
+    padding: 0 20px;
+    height: 40px;
+    background: royalblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.todo__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-top: 1px solid black;
+}
+.todo__item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.todo__item-right, .todo__item-left{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+.todo__bot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.todo__del-all{
+    background: royalblue;
+    border: 2px solid black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.todo__lvl{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    border: 1px solid black;
+}
+
+.todo__status{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.todo__status-btn{
+    padding: 8px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: royalblue;
+    color: #fff;
+}
+.status__done{
+    background: green;
+}
+.status__imp{
+    background: gold;
+}
